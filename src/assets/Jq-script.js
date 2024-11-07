@@ -38,7 +38,7 @@ $(document).ready(function () {
         }
     );
 
-    $(".header__bottom-mob-burger").on("click", function () {
+    $(".header__burger").on("click", function () {
         $(".header__nav-mob").toggleClass("open-nav");
         $(".header").toggleClass("header--active");
         // $("main").toggleClass("main-none")

@@ -1,0 +1,320 @@
+
+.orders__filter {
+    display: flex;
+    transform-origin: top;
+    transform: scaleY(0);
+    height: 0;
+    transition: 0.3s ;
+    padding-top: 0;
+}
+
+.orders__filter.isOpen {
+    transform: scaleY(1);
+    height: 25rem;
+    transition: 0.3s;
+    padding-top: 4rem;
+}
+
+.article-blog__image img, .model__image img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    transform: scale(1);
+}
+
+.article-blog:hover .article-blog__image img, .model:hover .model__image img {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.personal .request-create {
+    display: block !important;
+}
+
+.personal .request-create__step-2 {
+    display: block !important;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.progress-line.step2 {
+    width: 60.7rem !important;
+    transition: 0.3s;
+}
+
+.personal__tab-content_box.chat.active {
+    display: block !important;
+}
+
+.page-is-loading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.page-is-loading img {
+    width: 22rem;
+    height: 9rem;
+}
+
+#data-message {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#data-message.success {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#data-message.success p { color: green; }
+
+#data-message.error {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#data-message.error p { color: red; }
+
+#update-button {
+    display: flex;
+    align-items: center;
+}
+
+.loading-spinner {
+    position: absolute;
+    margin-left: -7rem;
+    margin-top: 2.3rem;
+    width: 7rem;
+    height: 5rem;
+}
+
+.model-wrapper.show-details .model__notif-details {
+    display: block;
+    transition: 0.3s;
+}
+
+.request-create_dropdown .request-create_dropdown__list div {
+    height: 0;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0);
+    padding: 0;
+    border-bottom: 0 solid white;
+    transform-origin: center;
+}
+
+.request-create_dropdown.open .request-create_dropdown__list div {
+    height: 4.2rem;
+    transition: 0.3s;
+    transform: scale(1);
+    padding: 1rem 0;
+    border-bottom: .1rem solid #969696;
+    transform-origin: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #969696;
+    font-weight: 500;
+}
+
+.request-create_dropdown .request-create_dropdown__list div.active {
+    height: 4.2rem;
+    transition: 0.3s;
+    transform: scale(1);
+    padding: 1rem 0;
+    border-bottom: .1rem solid #969696;
+    transform-origin: center;
+    color: #242424;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.request-create_dropdown.open .request-create_dropdown__list div:hover {
+    color: #242424;
+}
+
+.request-create_dropdown.open .request-create_dropdown__list {
+    height: fit-content;
+    transition: 0.3s;
+}
+
+.request-create_dropdown .request-create_dropdown__list {
+    height: 4.2rem;
+    transition: 0.3s;
+}
+
+.p-autocomplete-items-wrapper {
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    border: 1px solid #969696;
+    padding: 1rem;
+}
+.p-autocomplete-items-wrapper li {
+    padding: 0.3rem 0;
+    transition: 0.3s;
+}
+
+.p-autocomplete-items-wrapper li:hover {
+    color: #242424;
+    transition: 0.3s;
+}
+
+.personal .request-create_order-num__input input {
+    width: 51rem;
+}
+
+.p-autocomplete-items-wrapper::-webkit-scrollbar {
+    width: .5rem;
+}
+.p-autocomplete-items-wrapper::-webkit-scrollbar-thumb {
+    background-color: #afafaf;
+    border-radius: 4rem;
+}
+.p-autocomplete-items-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, .2) inset;
+    background-color: #f9f9fd;
+    border-radius: 4rem;
+}
+
+.personal .chat__msgs {
+    align-items: flex-end !important;
+}
+
+.request-personal__content .page-is-loading {
+    display: none;
+}
+.request-personal__content .chat__container {
+    display: flex;
+}
+
+.request-personal__content.isLoading .page-is-loading {
+    display: flex;
+}
+.request-personal__content.isLoading .chat__container {
+    display: none;
+}
+
+.empty-page {
+    padding: 4rem;
+}
+.empty-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-desc {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.record__custom-checkbox.odd:checked+label::before {
+    background-image: url("../img/odd.svg");
+    background-size: 50%;
+}
+
+.chat__send {
+    width: 2.2rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+.chat__send .loading-spinner {
+    width: 5.2rem;
+    height: 2.5rem;
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+}
+
+.category-error {
+    position: absolute;
+    margin-top: 2rem;
+    color: red;
+    font-size: 1.4rem;
+}
+
+.personal .request-create_progress .progress-numbers span.complete {
+    color: transparent;
+}
+
+.order-id-error {
+    position: absolute;
+    color: red;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.sub-category-error {
+    position: absolute;
+    color: red;
+    margin-top: -3rem;
+    font-size: 1.4rem;
+}
+
+.create-chat .loading-spinner {
+    margin-left: -7rem;
+    margin-top: -0.3rem;
+}
+
+.personal .error-fo {
+    padding-top: 10rem;
+}
+
+.personal .error-fo .container {
+    width: 100%;
+}
+
+.personal .error-fo .error-fo__bg {
+    width: 120rem;
+}
+.personal .error-fo .error-fo__bg img {
+    width: 120rem;
+}
+
+@media (max-width: 48em) {
+    .personal .personal__container .personal__navigation {
+        -webkit-transform: translateX(-84rem);
+        transform: translateX(-84rem);
+    }
+    .request-create_dropdown.open .request-create_dropdown__list div {
+        font-size: 2.3rem;
+    }
+    .request-create_dropdown .request-create_dropdown__list div.active {
+        font-size: 2.3rem;
+    }
+
+    .create-chat {
+        margin-left: 5rem;
+    }
+
+    .progress-line.step2 {
+        width: 38.7rem !important;
+        transition: 0.3s;
+    }
+
+    .orders__filter.isOpen {
+        height: 64rem;
+    }
+
+    .personal .personal__container.active .personal__navigation {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .personal .personal__container .personal__content {
+        -webkit-transform: translateX(-84rem);
+        transform: translateX(-84rem);
+    }
+    .personal .personal__container.active .personal__content {
+        -webkit-transform: translateX(84rem);
+        transform: translateX(84rem);
+    }
+}

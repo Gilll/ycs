@@ -17,6 +17,7 @@ global $USER;
     <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css" rel="stylesheet" />
     <?  
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/style.min.css");
+        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/profile.css");
         // $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/air-datepicker.css");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/jquery.fancybox.min.css");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/style-new.css");

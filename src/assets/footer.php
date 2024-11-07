@@ -364,6 +364,9 @@ while($footerElem = $footerLinks->GetNext()){
 
 <script src="<?=SITE_TEMPLATE_PATH?>/js/orders.js"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/new.js"></script>
+
+<script src="<?=SITE_TEMPLATE_PATH?>/js/profile/2.a3f82278.chunk.js"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/profile/main.f2ae0235.chunk.js"></script>
 <script>
 // $(document).ready( function () {
 //     console.log(1)
